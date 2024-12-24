@@ -20,7 +20,7 @@ def save_data(data, filename, file_type):
         writer.writerows(data)
         
 
-genre = "music"
+
 def video(genre):
     driver.get('https://www.youtube.com/')
     time.sleep(2)
@@ -73,7 +73,7 @@ def video(genre):
         except:
             keywords_tag = "Not available"
         try:
-            video_category = driver.find_element(By.XPATH, '//*[@id="microformat"]/player-microformat-renderer/script').get_property('genre')
+            video_category = driver.find_element(By.XPATH, '//*[@id="microformat"]/player-microformat-renderer/script').get_property('genre').text
         except:
             video_category = "Not available"
         try:
@@ -136,7 +136,7 @@ def video(genre):
     driver.quit()  
       
 def main():
-    video(genre)      
+    video("games")      
 
 if __name__ == '__main__':
     main()
