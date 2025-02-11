@@ -62,7 +62,7 @@ After fulfilling these requirements, you are **ready to run the script!**
 ## Usage
 ### Clone the repository:
 ```
-git clone https://github.com/yourusername/youtube-video-scraper.git
+git clone https://github.com/KrishnakumarModi/youtube-_Video-_scraping.git
 cd youtube-video-scraper
 ```
 ### Run the script:
