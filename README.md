@@ -107,9 +107,9 @@ The extracted data is saved as `yt_data.csv` with the following columns:
 - If the script fails to locate elements, check if YouTube's UI has changed.  
 - Ensure ChromeDriver matches the installed Chrome version.  
 - If encountering `SessionNotCreatedException`, update ChromeDriver using:  
-```
+```bash
 pip install --upgrade webdriver-manager
-
+```
 
 
 
