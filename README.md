@@ -20,46 +20,44 @@ This script automates YouTube searches for a given genre, extracts video details
   - Topic Details
 - Saves the extracted data into a CSV file (`yt_data.csv`).
 
-    Requirements
-    To run this script, ensure you have the following installed:
-    1. Python  Make sure you have Python 3.x installed. You can check your version with:  python --version
-    
+## Requirements
 
+To run this script, ensure you have the following installed:
+
+### 1. Python  
+Make sure you have **Python 3.x** installed. You can check your version with:  
+```bash
+python --version
+```
 If not installed, download it from [python.org](https://www.python.org/downloads/).
 
-### 2\. Google Chrome
-
-The script uses **Selenium WebDriver** with Chrome, so you must have Google Chrome installed and updated. Check your Chrome version:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`google-chrome --version # On Linux/macOS
-
-chrome --version # On Windows (Command Prompt)` 
-
+### 2. Google Chrome
+The script uses Selenium WebDriver with Chrome, so you must have Google Chrome installed and updated. Check your Chrome version:
+```bash
+google-chrome --version  # On Linux/macOS
+chrome --version         # On Windows (Command Prompt)
+```
 Download/update Chrome from google.com/chrome.
 
-### 3\. ChromeDriver
-
+3. ChromeDriver
 Ensure ChromeDriver matches your installed Chrome version. The script automatically installs and manages the correct version using webdriver-manager, but if needed, you can install/update manually:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`pip install --upgrade webdriver-manager` 
-
-### 4\. Required Python Libraries
-
+```bash
+pip install --upgrade webdriver-manager
+```
+4. Required Python Libraries
 Install the dependencies using:
+```bash
+pip install selenium webdriver-manager
+```
+5. Stable Internet Connection
+Since the script interacts with YouTube dynamically, ensure you have a stable internet connection to avoid timeouts or incomplete data scraping.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`pip install selenium webdriver-manager` 
-
-### 5\. Stable Internet Connection
-
-Since the script interacts with YouTube dynamically, ensure you have a **stable internet connection** to avoid timeouts or incomplete data scraping.
-
-### 6\. Permissions (Linux/macOS)
-
-If running on **Linux/macOS**, you might need to give executable permissions to ChromeDriver:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`chmod +x /path/to/chromedriver` 
-
-After fulfilling these requirements, you are ready to run the script!
+6. Permissions (Linux/macOS)
+If running on Linux/macOS, you might need to give executable permissions to ChromeDriver:
+```bash
+chmod +x /path/to/chromedriver
+```
+After fulfilling these requirements, you are **ready to run the script!**
 
 ## Usage
 ### Clone the repository:
