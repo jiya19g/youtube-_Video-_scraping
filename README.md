@@ -37,7 +37,7 @@ The script uses Selenium WebDriver with Chrome, so you must have Google Chrome i
 google-chrome --version  # On Linux/macOS
 chrome --version         # On Windows (Command Prompt)
 ```
-Download/update Chrome from google.com/chrome.
+Download/update Chrome from [here](google.com/chrome).
 
 ### 3. ChromeDriver
 Ensure ChromeDriver matches your installed Chrome version. The script automatically installs and manages the correct version using webdriver-manager, but if needed, you can install/update manually:
@@ -76,7 +76,7 @@ After fulfilling these requirements, you are **ready to run the script!**
 ## Usage
 ### Clone the repository:
 ```
-git clone https://github.com/yourusername/youtube-video-scraper.git
+git clone https://github.com/KrishnakumarModi/youtube-_Video-_scraping.git
 cd youtube-video-scraper
 ```
 ### Run the script:
