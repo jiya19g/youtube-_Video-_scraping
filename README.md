@@ -39,24 +39,38 @@ chrome --version         # On Windows (Command Prompt)
 ```
 Download/update Chrome from google.com/chrome.
 
-3. ChromeDriver
+### 3. ChromeDriver
 Ensure ChromeDriver matches your installed Chrome version. The script automatically installs and manages the correct version using webdriver-manager, but if needed, you can install/update manually:
 ```bash
 pip install --upgrade webdriver-manager
 ```
-4. Required Python Libraries
+### 4. Required Python Libraries
 Install the dependencies using:
 ```bash
 pip install selenium webdriver-manager
 ```
-5. Stable Internet Connection
+### 5. Stable Internet Connection
 Since the script interacts with YouTube dynamically, ensure you have a stable internet connection to avoid timeouts or incomplete data scraping.
 
-6. Permissions (Linux/macOS)
+### 6. Permissions (Linux/macOS)
 If running on Linux/macOS, you might need to give executable permissions to ChromeDriver:
 ```bash
 chmod +x /path/to/chromedriver
 ```
+If facing permission issues, run the script with sudo:
+```bash
+sudo python script.py
+```
+
+### 7. (Optional) Run in Headless Mode
+If you want the script to run without opening a Chrome window, you can modify it to run in headless mode:
+```bash
+from selenium.webdriver.chrome.options import Options  
+options = Options()  
+options.add_argument("--headless")  
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)  
+```
+
 After fulfilling these requirements, you are **ready to run the script!**
 
 ## Usage
